@@ -1,0 +1,19 @@
+.customCard {
+  margin-top: 20px;
+  padding: 20px; 
+}
+
+.profileIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userIcon {
+  color: gray;
+  font-size: 5rem; 
+}
+
+.userInfo {
+  margin-left: 20px; 
+}

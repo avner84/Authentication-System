@@ -1,0 +1,57 @@
+.AuthFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(
+    100vh - 56px
+  ); /* Calculate window height minus Navigation Bar height */
+}
+
+.AuthForm {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.AuthFormContent {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.AuthFormTitle {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+/* 
+Adjusts the top and bottom margins of the form container on smaller screens to ensure that the form is not obscured by the navbar and to provide sufficient space for scrolling. This prevents content from being hidden under the navbar, especially on devices with smaller screens where the navbar might take up more relative screen space.
+*/
+
+@media (max-width: 1300px) { 
+  .AuthFormContainer {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) { 
+    .AuthFormContainer {
+      margin-top: 70px;
+      margin-bottom: 70px;
+      max-width: 100%; 
+    }
+  }
